@@ -1,21 +1,16 @@
-[tool.poetry]
-name = "td-priklady"
-version = "2024.0.0"
+[project]
+name = "tdpriklady"
+version = "0.1.0"
 description = "Sbirka prikladu k predmetu termodynamika vyucovanem na FS CVUT Praha."
-authors = ["Jan Vyborny <jan.vyborny2@gmail.com>"]
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "~3.11"
-pandas = "^2.2.2"
-scipy = "^1.13.1"
-pyfluids = "^2.6.0"
-CoolProp = "^6.6.0"
-plotly = "^5.22.0"
-matplotlib = "^3.9.0"
-jupyter = "^1.0.0"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.13"
+dependencies = [
+    "coolprop>=6.8.0",
+    "ipykernel>=6.30.1",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.6",
+    "pandas>=2.3.2",
+    "plotly>=6.3.0",
+    "pyfluids>=2.8.1",
+    "scipy>=1.16.2",
+]
