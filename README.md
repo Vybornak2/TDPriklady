@@ -21,21 +21,24 @@ Příklady jsou zapsané v jupyter-notebook formatu - *.ipynb
 Pro otevření je potřeba spustit v terminálu příkaz `jupyter-notebook`
 Tyto soubory je dále možné otevřít v různých IDE jako je Pycharm, VS Code ...
 
-## Instalace - windows
+## Instalace - windows (terminál)
 
-1. git clone <https://github.com/Vybornak2/TDPriklady.git>
-2. otevřít terminál v naklonované složce a spustit příkazy
+### Doporučený způsob (pomocí uv)
 
-   ```
-   uv venv
-   uv sync
-   ```
+Pokud není nainstalován nástroj `uv`, nainstalujte ho pomocí:
+`py -m pip install uv` nebo z oficiálních stránek `https://docs.astral.sh/uv/`
 
-   pozn: (v případě, že není nainstalován nástroj `uv` je možné ho nainstalovat pomocí:
-   `py -m pip install uv` nebo z oficiálních stránek `https://docs.astral.sh/uv/`)
+1. Naklonování repozitáře: `git clone https://github.com/Vybornak2/TDPriklady.git`
+2. Vytvoření virtuálního prostředí: `uv venv`
+3. Synchronizace knihoven: `uv sync`
+4. Aktivace virtuálního prostředí: `./venv/scripts/activate` (nebo dle instrukcí uv po příkazu `uv venv`)
+5. V případě IDE jako VS Code je potřeba při spouštění Jupyter Notebooků vybrat správné prostředí (při otevření v pravém horním rohu `select Kernel`)
 
-3. aktivace virtualního prostředí pomocí (dle instrukcí uv po příkazu `uv venv`)
-4. v případě IDE jako VS Code je potřeba při spouštění Jupyter Notebooků vybrat správné prostředí (při otevření v pravém horním rohu `select Kernel`
+### Alternativní způsob (pomocí pip)
+
+1. Naklonování repozitáře: `git clone https://github.com/Vybornak2/TDPriklady.git`
+2. Instalace závislostí: `py -m pip install -r requirements.txt`
+3. V případě IDE jako VS Code je potřeba při spouštění Jupyter Notebooků vybrat správné prostředí
 
 ## Dodatečné poznámky
 
